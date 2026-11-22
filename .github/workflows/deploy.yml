@@ -27,11 +27,11 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: cloudspacev2/erp-backend:${{ env.TEAM_TAG }}
+          tags: cloudspacev2/erp-backend:hungry-beasts
 
       - name: Build and push frontend
         uses: docker/build-push-action@v6
         with:
           context: ./frontend
           push: true
-          tags: cloudspacev2/erp-frontend:${{ env.TEAM_TAG }}
+          tags: cloudspacev2/erp-frontend:hungry-beasts
